@@ -2,13 +2,10 @@
 {
     "plugins": [
         ["module-resolver", {
-            "root": ["./src"]//,
-            // "alias": {
-            //     "@pages": "./pages",
-            //     "@components": "./components",
-            //     "@img": "./assets/img",
-            //     "@styles": "./styles"
-            // }
+            "root": ["./src"],
+            "alias": {
+                "@img": "./assets/img"
+            }
         }]
     ]
   }
