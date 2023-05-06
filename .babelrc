@@ -1,0 +1,14 @@
+/* 절대 경로 세팅을 위한 설정 */
+{
+    "plugins": [
+        ["module-resolver", {
+            "root": ["./src"]//,
+            // "alias": {
+            //     "@pages": "./pages",
+            //     "@components": "./components",
+            //     "@img": "./assets/img",
+            //     "@styles": "./styles"
+            // }
+        }]
+    ]
+  }
