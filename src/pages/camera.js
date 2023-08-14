@@ -25,7 +25,7 @@ const Camera = ({ navigation }) => {
                 console.error('LaunchCamera Error: ', response.error)
             }
             else if (response.didCancel) {
-                navigation.navigate('main')
+                navigation.navigate('getImage')
             }
             else {
                 setImageSource(response.assets[0].uri)

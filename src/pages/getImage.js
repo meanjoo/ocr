@@ -7,16 +7,16 @@ import {
 	Image,
 } from 'react-native'
 
-const Main = ({ navigation }) => {
+const GetImage = ({ navigation }) => {
 	return (
 		<SafeAreaView style={styles.container}>
-			<TouchableOpacity style={styles.touchContainer} onPress={() => navigation.navigate('getImage')}>
-				<Image style={styles.img} source={require('assets/img/paper.png')} />
-				<Text style={styles.text}>시험지 이미지</Text>
+			<TouchableOpacity style={styles.touchContainer} onPress={() => navigation.navigate('camera')}>
+				<Image style={styles.img} source={require('assets/img/camera.png')} />
+				<Text style={styles.text}>카메라로 사진 찍기</Text>
 			</TouchableOpacity>
-			<TouchableOpacity style={styles.touchContainer} onPress={() => navigation.navigate('typeAnswer')}>
-				<Image style={styles.img} source={require('assets/img/typeAnswer.png')} />
-				<Text style={styles.text}>정답 입력</Text>
+			<TouchableOpacity style={styles.touchContainer} onPress={() => navigation.navigate('upload')}>
+				<Image style={styles.img} source={require('assets/img/upload.png')} />
+				<Text style={styles.text}>이미지 파일 업로드</Text>
 			</TouchableOpacity>
 		</SafeAreaView>
 	)
@@ -46,4 +46,4 @@ const styles = StyleSheet.create({
 	}
 })
 
-export default Main
+export default GetImage
